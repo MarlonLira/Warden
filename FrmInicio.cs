@@ -33,11 +33,7 @@ namespace Warden
 
         private void btn_produto_Click(object sender, System.EventArgs e)
         {
-            pn_base.Controls.Clear();
-            FrmBase Base = new FrmBase();
-            Base.TopLevel = false;
-            pn_base.Controls.Add(Base);
-            Base.Show();
+            
         }
     }
 }
