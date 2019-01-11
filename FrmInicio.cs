@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Windows.Forms;
 using Warden.View;
-using Warden.View.Base;
+using Warden.View.Produto;
 
 namespace Warden
 {
@@ -26,14 +26,42 @@ namespace Warden
         private void btn_cliente_Click(object sender, System.EventArgs e)
         {
             pn_base.Controls.Clear();
-            UscCliente UCliente = new UscCliente(this);
+            UscCliente UCliente = new UscCliente();
             pn_base.Controls.Add(UCliente);
-            
         }
 
         private void btn_produto_Click(object sender, System.EventArgs e)
         {
-            
+            pn_base.Controls.Clear();
+            UscProduto UProduto = new UscProduto();
+            pn_base.Controls.Add(UProduto);
+        }
+
+        private void btn_minimizar_Click(object sender, System.EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_maximizar_Click(object sender, System.EventArgs e)
+        {
+            if(this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

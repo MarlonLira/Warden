@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.PnLeft = new System.Windows.Forms.Panel();
-            this.btn_produto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_produto = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
             this.btn_inicio = new System.Windows.Forms.Button();
             this.btn_menu = new System.Windows.Forms.Button();
@@ -41,6 +41,9 @@
             this.btn_fechar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.mnuhome = new System.Windows.Forms.MenuStrip();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnTitle = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pn_base = new System.Windows.Forms.Panel();
@@ -48,36 +51,23 @@
             this.panel1.SuspendLayout();
             this.PnTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.mnuhome.SuspendLayout();
             this.PnTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnLeft
             // 
             this.PnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.PnLeft.Controls.Add(this.btn_produto);
             this.PnLeft.Controls.Add(this.panel1);
+            this.PnLeft.Controls.Add(this.btn_produto);
             this.PnLeft.Controls.Add(this.btn_cliente);
             this.PnLeft.Controls.Add(this.btn_inicio);
             this.PnLeft.Controls.Add(this.btn_menu);
+            this.PnLeft.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PnLeft.Location = new System.Drawing.Point(-1, 90);
             this.PnLeft.Name = "PnLeft";
             this.PnLeft.Size = new System.Drawing.Size(262, 631);
             this.PnLeft.TabIndex = 1;
-            // 
-            // btn_produto
-            // 
-            this.btn_produto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_produto.FlatAppearance.BorderSize = 0;
-            this.btn_produto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.btn_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_produto.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_produto.Location = new System.Drawing.Point(0, 165);
-            this.btn_produto.Name = "btn_produto";
-            this.btn_produto.Size = new System.Drawing.Size(262, 55);
-            this.btn_produto.TabIndex = 5;
-            this.btn_produto.Text = "Produtos";
-            this.btn_produto.UseVisualStyleBackColor = true;
-            this.btn_produto.Click += new System.EventHandler(this.btn_produto_Click);
             // 
             // panel1
             // 
@@ -99,6 +89,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "(c) 2019 Warden";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btn_produto
+            // 
+            this.btn_produto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_produto.FlatAppearance.BorderSize = 0;
+            this.btn_produto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.btn_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_produto.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_produto.Location = new System.Drawing.Point(0, 165);
+            this.btn_produto.Name = "btn_produto";
+            this.btn_produto.Size = new System.Drawing.Size(262, 55);
+            this.btn_produto.TabIndex = 5;
+            this.btn_produto.Text = "Produtos";
+            this.btn_produto.UseVisualStyleBackColor = true;
+            this.btn_produto.Click += new System.EventHandler(this.btn_produto_Click);
             // 
             // btn_cliente
             // 
@@ -154,6 +159,8 @@
             this.PnTop.Controls.Add(this.btn_fechar);
             this.PnTop.Controls.Add(this.pictureBox1);
             this.PnTop.Controls.Add(this.label3);
+            this.PnTop.Controls.Add(this.mnuhome);
+            this.PnTop.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PnTop.Location = new System.Drawing.Point(258, -5);
             this.PnTop.Name = "PnTop";
             this.PnTop.Size = new System.Drawing.Size(1022, 97);
@@ -171,6 +178,7 @@
             this.btn_minimizar.TabIndex = 5;
             this.btn_minimizar.Text = "▼";
             this.btn_minimizar.UseVisualStyleBackColor = false;
+            this.btn_minimizar.Click += new System.EventHandler(this.btn_minimizar_Click);
             // 
             // btn_maximizar
             // 
@@ -184,6 +192,7 @@
             this.btn_maximizar.TabIndex = 4;
             this.btn_maximizar.Text = "▲";
             this.btn_maximizar.UseVisualStyleBackColor = false;
+            this.btn_maximizar.Click += new System.EventHandler(this.btn_maximizar_Click);
             // 
             // btn_fechar
             // 
@@ -219,6 +228,30 @@
             this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "Inicio";
+            // 
+            // mnuhome
+            // 
+            this.mnuhome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.mnuhome.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem,
+            this.produtosToolStripMenuItem});
+            this.mnuhome.Location = new System.Drawing.Point(0, 73);
+            this.mnuhome.Name = "mnuhome";
+            this.mnuhome.Size = new System.Drawing.Size(1022, 24);
+            this.mnuhome.TabIndex = 6;
+            this.mnuhome.Text = "Home";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // produtosToolStripMenuItem
+            // 
+            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // PnTitle
             // 
@@ -267,6 +300,8 @@
             this.PnTop.ResumeLayout(false);
             this.PnTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.mnuhome.ResumeLayout(false);
+            this.mnuhome.PerformLayout();
             this.PnTitle.ResumeLayout(false);
             this.PnTitle.PerformLayout();
             this.ResumeLayout(false);
@@ -290,7 +325,10 @@
         private System.Windows.Forms.Button btn_minimizar;
         private System.Windows.Forms.Button btn_maximizar;
         private System.Windows.Forms.Button btn_fechar;
-        protected System.Windows.Forms.Panel pn_base;
+        private System.Windows.Forms.MenuStrip mnuhome;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
+        public System.Windows.Forms.Panel pn_base;
     }
 }
 

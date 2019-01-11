@@ -1,28 +1,23 @@
 ﻿using System;
 using System.Windows.Forms;
-using Warden.View.Cliente;
 
-namespace Warden.View
+namespace Warden.View.Produto
 {
-    public partial class UscCliente : UscBase
+    public partial class UscProduto : UscBase
     {
-        public UscCliente()
+        public UscProduto()
         {
             InitializeComponent();
-        }
-
-        private void UscCliente_Load(object sender, EventArgs e)
-        {
             
         }
 
         private void btn_Cadastrar_Click(object sender, EventArgs e)
         {
-            UscClienteCadastro CadastrarCliente;
+            UscProdutoCadastro CadastrarProduto;
             try
             {
-                CadastrarCliente = new UscClienteCadastro();
-                CreateNewControl(CadastrarCliente);
+                CadastrarProduto = new UscProdutoCadastro();
+                CreateNewControl(CadastrarProduto);
             }
             catch (Exception Err)
             {
@@ -32,11 +27,11 @@ namespace Warden.View
 
         private void btn_pesquisar_Click(object sender, EventArgs e)
         {
-            UscClientePesquisar PesquisarCliente;
+            UscProdutoPesquisa PesquisarProduto;
             try
             {
-                PesquisarCliente = new UscClientePesquisar();
-                CreateNewControl(PesquisarCliente);
+                PesquisarProduto = new UscProdutoPesquisa();
+                CreateNewControl(PesquisarProduto);
             }
             catch (Exception Err)
             {

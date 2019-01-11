@@ -13,3 +13,7 @@ C:\Users\marlo\source\NewRepos\ToolsApp\Warden\bin\Debug\Warden.exe
 C:\Users\marlo\source\NewRepos\ToolsApp\Warden\bin\Debug\Warden.pdb
 C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.exe
 C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.pdb
+C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.View.Produto.UscProduto.resources
+C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.View.Produto.UscProdutoCadastro.resources
+C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.View.Produto.UscProdutoPesquisa.resources
+C:\Users\marlo\source\NewRepos\ToolsApp\Warden\obj\Debug\Warden.View.Base.UscMenu.resources

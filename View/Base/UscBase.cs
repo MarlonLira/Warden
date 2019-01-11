@@ -6,6 +6,8 @@ namespace Warden.View
 {
     public partial class UscBase : UserControl
     {
+        public Control CacheControl;
+
         public UscBase()
         {
             InitializeComponent();
@@ -14,6 +16,19 @@ namespace Warden.View
         protected void btn_fechar_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        protected void CreateNewControl(Control NewControl)
+        {
+            try
+            {
+                this.Controls.Clear();
+                this.Controls.Add(NewControl);
+            }
+            catch (Exception Err)
+            {
+                MessageBox.Show(Err.Message);
+            }
         }
 
         protected void ManualSettings()
@@ -25,6 +40,11 @@ namespace Warden.View
         protected void UscBase_Load(object sender, EventArgs e)
         {
             ManualSettings();
+        }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

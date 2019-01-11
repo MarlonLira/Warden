@@ -1,6 +1,6 @@
-﻿namespace Warden.View
+﻿namespace Warden.View.Produto
 {
-    partial class UscCliente
+    partial class UscProduto
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -38,8 +38,8 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(247, 39);
-            this.label1.Text = "Tela de Cliente";
+            this.label1.Size = new System.Drawing.Size(259, 39);
+            this.label1.Text = "Tela de Produto";
             // 
             // btn_voltar
             // 
@@ -55,15 +55,15 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_Cadastrar, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_pesquisar, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 96);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Cadastrar, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 136);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 400);
-            this.tableLayoutPanel1.TabIndex = 9;
+            this.tableLayoutPanel1.TabIndex = 10;
             // 
             // btn_pesquisar
             // 
@@ -97,13 +97,12 @@
             this.btn_Cadastrar.UseVisualStyleBackColor = false;
             this.btn_Cadastrar.Click += new System.EventHandler(this.btn_Cadastrar_Click);
             // 
-            // UscCliente
+            // UscProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
-            this.Name = "UscCliente";
-            this.Load += new System.EventHandler(this.UscCliente_Load);
+            this.Name = "UscProduto";
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
@@ -118,7 +117,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.Button btn_Cadastrar;
         public System.Windows.Forms.Button btn_pesquisar;
+        public System.Windows.Forms.Button btn_Cadastrar;
     }
 }

@@ -44,11 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\Hlp.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Produto.cs" />
+    <Compile Include="Persistence\ClientePst.cs" />
+    <Compile Include="Persistence\ConnectDb.cs" />
+    <Compile Include="Persistence\IConfigPst.cs" />
+    <Compile Include="Persistence\ProdutoPst.cs" />
     <Compile Include="View\Base\UscCadastro.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\Base\UscCadastro.Designer.cs">
       <DependentUpon>UscCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Base\UscMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Base\UscMenu.Designer.cs">
+      <DependentUpon>UscMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Base\UscPesquisa.cs">
       <SubType>UserControl</SubType>
@@ -88,8 +101,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Produto\UscProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Produto\UscProduto.Designer.cs">
+      <DependentUpon>UscProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Produto\UscProdutoCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Produto\UscProdutoCadastro.Designer.cs">
+      <DependentUpon>UscProdutoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Produto\UscProdutoPesquisa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Produto\UscProdutoPesquisa.Designer.cs">
+      <DependentUpon>UscProdutoPesquisa.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Base\UscCadastro.resx">
       <DependentUpon>UscCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Base\UscMenu.resx">
+      <DependentUpon>UscMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Base\UscPesquisa.resx">
       <DependentUpon>UscPesquisa.cs</DependentUpon>
@@ -119,6 +153,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Produto\UscProduto.resx">
+      <DependentUpon>UscProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Produto\UscProdutoCadastro.resx">
+      <DependentUpon>UscProdutoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Produto\UscProdutoPesquisa.resx">
+      <DependentUpon>UscProdutoPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,9 +179,8 @@
     <None Include="Resources\home-2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Persistence\" />
-    <Folder Include="View\Produto\" />
+    <Folder Include="View\Fornecedor\" />
+    <Folder Include="View\Funcionario\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

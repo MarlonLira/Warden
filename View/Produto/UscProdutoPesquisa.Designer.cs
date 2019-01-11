@@ -1,6 +1,6 @@
-﻿namespace Warden.View.Cliente
+﻿namespace Warden.View.Produto
 {
-    partial class UscClientePesquisar
+    partial class UscProdutoPesquisa
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_cpf = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,16 +51,14 @@
             // 
             this.btn_limpar.FlatAppearance.BorderSize = 0;
             this.btn_limpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.btn_limpar.Visible = true;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(3, 184);
+            this.label2.Location = new System.Drawing.Point(3, 185);
             // 
             // txt_nome
             // 
-            this.txt_nome.Location = new System.Drawing.Point(3, 204);
-            this.txt_nome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nome.Location = new System.Drawing.Point(3, 205);
             // 
             // panel2
             // 
@@ -70,8 +66,8 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(338, 39);
-            this.label1.Text = "Pesquisa de Clientes";
+            this.label1.Size = new System.Drawing.Size(350, 39);
+            this.label1.Text = "Pesquisa de Produtos";
             // 
             // btn_voltar
             // 
@@ -79,40 +75,12 @@
             this.btn_voltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
-            // txt_cpf
-            // 
-            this.txt_cpf.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cpf.Location = new System.Drawing.Point(320, 204);
-            this.txt_cpf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(280, 21);
-            this.txt_cpf.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(316, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 15);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "CPF";
-            // 
-            // UscClientePesquisar
+            // UscProdutoPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_cpf);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "UscClientePesquisar";
+            this.Name = "UscProdutoPesquisa";
             this.Size = new System.Drawing.Size(1020, 631);
-            this.Load += new System.EventHandler(this.UscClientePesquisar_Load);
-            this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.panel2, 0);
-            this.Controls.SetChildIndex(this.txt_nome, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.txt_cpf, 0);
-            this.Controls.SetChildIndex(this.label3, 0);
+            this.Load += new System.EventHandler(this.UscProdutoPesquisa_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -122,8 +90,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_cpf;
-        private System.Windows.Forms.Label label3;
     }
 }
